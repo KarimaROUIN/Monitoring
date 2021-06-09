@@ -3,21 +3,31 @@ import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
-import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './nav/sidenav/sidenav.component';
+import { HeaderComponent } from './nav/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AdminComponent,
-    HeaderComponent,
     SidenavComponent,
+    HeaderComponent,
     DashboardComponent
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
+    MatSidenavModule
   ]
 })
 export class AdminModule { }
