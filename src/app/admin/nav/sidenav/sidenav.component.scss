@@ -7,8 +7,10 @@
   .logo {
     text-align: center;
     padding: 2.6rem 1rem;
+    background-color: transparent;
     img {
       width: 200px;
+      background-color: transparent;
     }
   }
   .mat-divider {
@@ -29,6 +31,7 @@
         margin: 0 8px;
         &:hover {
           background: #2c3344 !important;
+          opacity: 10%;
         }
       }
     }
@@ -44,8 +47,10 @@
     ::ng-deep {
       .mat-list-item-content {
         background: #2c3344 !important;
+        opacity: 10%;
         &:hover {
           background: #2c3344 !important;
+          opacity: 10%;
         }
       }
     }
