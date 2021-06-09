@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { HeaderComponent } from './header/header.component';
+import { SidenavComponent } from './nav/sidenav/sidenav.component';
 
 
 @NgModule({
   declarations: [
     AdminComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     CommonModule,
