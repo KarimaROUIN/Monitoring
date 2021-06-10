@@ -1,0 +1,28 @@
+<mat-card> 
+ <table class="mytable">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">risk_plan<i (click)="onSortClick($event)" class="my-icon fa fa-chevron-up"></i></th>
+      <th scope="col">questionnairre</th>
+      <th scope="col">modified</th>
+       <th scope="col">############</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let obj of dataSource; let i=index;">
+      <th scope="row">{{i}}</th>
+      <td>{{obj.risk_plan}}</td>
+      <td>{{obj.questionnairre}}</td>
+      <td>{{obj.modified}}</td>
+      <td> <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+<mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+      <mat-icon>delete</mat-icon>
+      </button></td>
+    </tr>
+  </tbody>
+</table>
+  </mat-card>
+

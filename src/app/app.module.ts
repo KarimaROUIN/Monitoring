@@ -10,9 +10,16 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button'; 
+import { ButtonsModule, WavesModule, CollapseModule } from 'ng-uikit-pro-standard'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,13 @@ import { MatListModule } from '@angular/material/list';
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatButtonModule,
+    ButtonsModule, WavesModule, CollapseModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
