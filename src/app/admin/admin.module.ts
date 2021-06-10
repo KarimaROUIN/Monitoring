@@ -20,7 +20,15 @@ import { ResponsabelesComponent } from './pages/responsabeles/responsabeles.comp
 import { ShowallComponent } from './pages/responsabeles/showall/showall.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AddresponsableComponent } from './pages/responsabeles/addresponsable/addresponsable.component';
+import { AdddeviceComponent } from './pages/devices/adddevice/adddevice.component';
+import { DevicesComponent } from './pages/devices/devices.component';
+import { KiosksComponent } from './pages/kiosks/kiosks.component';
+import { AddkioskComponent } from './pages/kiosks/addkiosk/addkiosk.component';
+import { ShowallkiosksComponent } from './pages/kiosks/showallkiosks/showallkiosks.component';
+import { ShowalldevicesComponent } from './pages/devices/showalldevices/showalldevices.component';
+import { CashboxComponent } from './pages/cashbox/cashbox.component';
+import { TransactionsComponent } from './pages/transactions/transactions.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -29,7 +37,16 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     DashboardComponent,
     NotificationComponent,
     ResponsabelesComponent,
-    ShowallComponent
+    ShowallComponent,
+    AddresponsableComponent,
+    AdddeviceComponent,
+    DevicesComponent,
+    KiosksComponent,
+    AddkioskComponent,
+    ShowallkiosksComponent,
+    ShowalldevicesComponent,
+    CashboxComponent,
+    TransactionsComponent
   ],
   imports: [
     CommonModule,
@@ -44,8 +61,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     MatPaginatorModule,
     MatFormFieldModule,
     MatCardModule,
-    MatButtonModule,
-    MDBBootstrapModule.forRoot()
+    MatButtonModule
   ]
 })
 export class AdminModule { }

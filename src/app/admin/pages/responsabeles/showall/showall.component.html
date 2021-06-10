@@ -1,12 +1,18 @@
 <mat-card> 
  <table class="mytable">
-  <thead>
+ 
+</table>
+
+<table class="table table-hover">
+   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">risk_plan<i (click)="onSortClick($event)" class="my-icon fa fa-chevron-up"></i></th>
+      <th scope="col">risk_plan</th>
       <th scope="col">questionnairre</th>
       <th scope="col">modified</th>
-       <th scope="col">############</th>
+       <th scope="col"></th>
+       <th scope="col"></th>
+       <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -15,12 +21,22 @@
       <td>{{obj.risk_plan}}</td>
       <td>{{obj.questionnairre}}</td>
       <td>{{obj.modified}}</td>
-      <td> <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+      <td> 
+        <button mat-icon-button  class="darkcyanbutton"  aria-label="Example icon button with a heart icon">
+     <mat-icon>remove_red_eye</mat-icon>
+      </button>
+      </td>
+      <td>
+      <button mat-icon-button class="greenbutton" aria-label="Example icon button with a heart icon">
 <mat-icon>edit</mat-icon>
       </button>
-      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
-      <mat-icon>delete</mat-icon>
-      </button></td>
+      </td>
+      <td>
+      <button mat-icon-button  color="accent"  aria-label="Example icon button with a heart icon">
+     <mat-icon>delete_outline</mat-icon>
+      </button>
+    
+      </td>
     </tr>
   </tbody>
 </table>

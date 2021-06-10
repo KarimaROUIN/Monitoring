@@ -16,8 +16,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button'; 
 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +34,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     MatPaginatorModule,
     MatFormFieldModule,
     MatCardModule,
-    MatButtonModule,
-    MDBBootstrapModule.forRoot()
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
