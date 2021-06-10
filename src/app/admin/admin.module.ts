@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { SidenavComponent } from './nav/sidenav/sidenav.component';
@@ -29,6 +29,7 @@ import { ShowallkiosksComponent } from './pages/kiosks/showallkiosks/showallkios
 import { ShowalldevicesComponent } from './pages/devices/showalldevices/showalldevices.component';
 import { CashboxComponent } from './pages/cashbox/cashbox.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
+import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showallnotificatiosn.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -46,7 +47,8 @@ import { TransactionsComponent } from './pages/transactions/transactions.compone
     ShowallkiosksComponent,
     ShowalldevicesComponent,
     CashboxComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    ShowallnotificatiosnComponent
   ],
   imports: [
     CommonModule,
@@ -61,7 +63,8 @@ import { TransactionsComponent } from './pages/transactions/transactions.compone
     MatPaginatorModule,
     MatFormFieldModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ]
 })
 export class AdminModule { }

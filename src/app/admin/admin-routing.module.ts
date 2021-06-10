@@ -10,11 +10,13 @@ import { AddkioskComponent } from './pages/kiosks/addkiosk/addkiosk.component';
 import { AdddeviceComponent } from './pages/devices/adddevice/adddevice.component';
 import { CashboxComponent } from './pages/cashbox/cashbox.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
+import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showallnotificatiosn.component';
 
 
 const routes: Routes = [
   { path: '', component:  AdminComponent, children:[  
   {path: 'dashboard', component:  DashboardComponent},
+  {path: 'notifications', component:  ShowallnotificatiosnComponent},
   {path: 'addresponsable', component:  AddresponsableComponent},
   {path: 'responsables', component:  ResponsabelesComponent},
   {path: 'kiosks', component:  KiosksComponent},
