@@ -15,7 +15,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button'; 
-import { ButtonsModule, WavesModule, CollapseModule } from 'ng-uikit-pro-standard'
+
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ButtonsModule, WavesModule, CollapseModule } from 'ng-uikit-pro-standar
     MatFormFieldModule,
     MatCardModule,
     MatButtonModule,
-    ButtonsModule, WavesModule, CollapseModule 
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,8 +19,8 @@ import { NotificationComponent } from './nav/notification/notification.component
 import { ResponsabelesComponent } from './pages/responsabeles/responsabeles.component';
 import { ShowallComponent } from './pages/responsabeles/showall/showall.component';
 import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';// MDB Angular Pro
-import { ButtonsModule, WavesModule, CollapseModule } from 'angular-bootstrap-md'
+import {MatButtonModule} from '@angular/material/button';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -45,7 +45,7 @@ import { ButtonsModule, WavesModule, CollapseModule } from 'angular-bootstrap-md
     MatFormFieldModule,
     MatCardModule,
     MatButtonModule,
-    ButtonsModule, WavesModule, CollapseModule 
+    MDBBootstrapModule.forRoot()
   ]
 })
 export class AdminModule { }
