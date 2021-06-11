@@ -40,39 +40,15 @@ export class ShowallComponent implements OnInit {
   displayedColumns: string[] = ['risk_plan', 'questionnairre', 'modified', 'star'];
   dataSource = ELEMENT_DATA;
 
-  
-  sortDir = 1;//1= 'ASE' -1= DSC
   ngOnInit() {
   /*  this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;*/
   }
 
   constructor(){
-    this.sortArr('fname');
+ 
    }
-   onSortClick(event: { currentTarget: any; }) {
-    let target = event.currentTarget,
-      classList = target.classList;
-
-    if (classList.contains('fa-chevron-up')) {
-      classList.remove('fa-chevron-up');
-      classList.add('fa-chevron-down');
-      this.sortDir=-1;
-    } else {
-      classList.add('fa-chevron-up');
-      classList.remove('fa-chevron-down');
-      this.sortDir=1;
-    }
-    this.sortArr('fname');
-  }
-
-  sortArr(colName:any){
-    /*this.dataSource.sort((a,b)=>{
-      a= a[colName].toLowerCase();
-      b= b[colName].toLowerCase();
-      return a.localeCompare(b) * this.sortDir;
-    });*/
-  }
+   
 }
 
  
