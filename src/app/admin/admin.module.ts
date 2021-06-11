@@ -20,6 +20,7 @@ import { ResponsabelesComponent } from './pages/responsabeles/responsabeles.comp
 import { ShowallComponent } from './pages/responsabeles/showall/showall.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 import { AddresponsableComponent } from './pages/responsabeles/addresponsable/addresponsable.component';
 import { AdddeviceComponent } from './pages/devices/adddevice/adddevice.component';
 import { DevicesComponent } from './pages/devices/devices.component';
