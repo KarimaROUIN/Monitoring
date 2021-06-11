@@ -65,7 +65,8 @@ import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showal
     MatFormFieldModule,
     MatCardModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ]
 })
 export class AdminModule { }

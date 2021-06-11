@@ -12,7 +12,7 @@ export class ResponsableService {
   customersUrl=api.url+'responsable/all';
   
   public  getallResponsableData() {
-  
+    console.log("/**/**//*/*/*/*testestest*/*/*/*/");
     return  this.http.get<responsable[]>(this.customersUrl);
     }
 
