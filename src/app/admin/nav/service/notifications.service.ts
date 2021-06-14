@@ -15,4 +15,5 @@ export class NotificationsService {
     console.log("/**/**//*/*/*/*testestest*/*/*/*/");
     return  this.http.get<notification[]>(this.customersUrl);
     }
+  }
 

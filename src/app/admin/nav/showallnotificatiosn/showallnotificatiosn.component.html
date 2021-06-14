@@ -11,10 +11,10 @@
    <thead>
     <tr>
       <th scope="col">#id</th>
-      <th scope="col">Name</th>
-      <th scope="col">email</th>
-      <th scope="col">login</th>
-      <th scope="col">password</th>
+      <th scope="col">title</th>
+      <th scope="col">type</th>
+      <th scope="col">description</th>
+      <th scope="col">device</th>
        <th scope="col"></th>
        <th scope="col"></th>
        <th scope="col"></th>
@@ -23,10 +23,10 @@
   <tbody>
     <tr *ngFor="let obj of dataSource; let i=index;">
       <td>{{obj.id}}</td>
-      <td>{{obj.firstName}}  {{obj.lastName}}</td>
-      <td>{{obj.email}}</td>
-      <td>{{obj.login}}</td>
-      <td>{{obj.password}}</td>
+      <td>{{obj.title}}</td>
+      <td>{{obj.type}}</td>
+      <td>{{obj.description}}</td>
+      <td>{{obj.device}}</td>
       <td> 
         <button mat-icon-button  class="darkcyanbutton"  aria-label="Example icon button with a heart icon">
      <mat-icon>remove_red_eye</mat-icon>

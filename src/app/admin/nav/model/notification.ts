@@ -3,5 +3,5 @@ export interface notification {
     title:string;
     type:string;
     description:string;
-    device: string;
+    device: string; 
   }

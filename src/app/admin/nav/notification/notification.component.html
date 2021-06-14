@@ -1,24 +1,26 @@
 
           <button
             mat-button
+            
             [matMenuTriggerFor]="menu"
             class="user mt-2 d-flex align-items-center"
           >
          
-          <mat-icon matBadge="4" matBadgeColor="warn" class="notification-button__icon">notifications_none</mat-icon>
+          <mat-icon [matBadge]="dataSource.length"  matBadgeColor="warn" >notifications_none</mat-icon>
 </button>
+
  <mat-menu #menu="matMenu">
   <button mat-menu-item class="notification-menu__button">
-    check out this awesome ticket
+   {{dataSource[0].description }}   {{dataSource[0].type}}
   </button>
   <button mat-menu-item class="notification-menu__button">
-    What is the best way to get ...
+  {{dataSource[1].description}}   {{ dataSource[1].type}}
   </button>
   <button mat-menu-item class="notification-menu__button">
-    This is just a simple notification
+    {{dataSource[2].description }}   {{dataSource[2].type}}
   </button>
   <button mat-menu-item class="notification-menu__button">
-    12 new orders has arrived today
+  {{dataSource[3].description}}    {{dataSource[3].type}}
   </button>
 <a routerLink="/admin/notifications">  <button mat-button color="primary">
    show more ....

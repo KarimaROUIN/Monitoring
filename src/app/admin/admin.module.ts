@@ -21,6 +21,7 @@ import { ShowallComponent } from './pages/responsabeles/showall/showall.componen
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import {MatBadgeModule} from '@angular/material/badge';
 import { AddresponsableComponent } from './pages/responsabeles/addresponsable/addresponsable.component';
 import { AdddeviceComponent } from './pages/devices/adddevice/adddevice.component';
 import { DevicesComponent } from './pages/devices/devices.component';
@@ -66,7 +67,8 @@ import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showal
     MatCardModule,
     MatButtonModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MatBadgeModule
   ]
 })
 export class AdminModule { }
