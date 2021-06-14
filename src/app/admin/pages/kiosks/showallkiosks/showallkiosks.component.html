@@ -1,1 +1,45 @@
-<p>showallkiosks works!</p>
+<mat-card> 
+ <table class="mytable">
+ 
+</table>
+
+<table class="table table-hover">
+   <thead>
+    <tr>
+      <th scope="col">#id</th>
+      <th scope="col">Name</th>
+      <th scope="col">email</th>
+      <th scope="col">login</th>
+      <th scope="col">password</th>
+       <th scope="col"></th>
+       <th scope="col"></th>
+       <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let obj of dataSource; let i=index;">
+      <td>{{obj.id}}</td>
+      <td>{{obj.firstName}}  {{obj.lastName}}</td>
+      <td>{{obj.email}}</td>
+      <td>{{obj.login}}</td>
+      <td>{{obj.password}}</td>
+      <td> 
+        <button mat-icon-button  class="darkcyanbutton"  aria-label="Example icon button with a heart icon">
+     <mat-icon>remove_red_eye</mat-icon>
+      </button>
+      </td>
+      <td>
+      <button mat-icon-button class="greenbutton" aria-label="Example icon button with a heart icon">
+<mat-icon>edit</mat-icon>
+      </button>
+      </td>
+      <td>
+      <button mat-icon-button  color="accent"  aria-label="Example icon button with a heart icon">
+     <mat-icon>delete_outline</mat-icon>
+      </button>
+    
+      </td>
+    </tr>
+  </tbody>
+</table>
+  </mat-card>
