@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { api } from 'src/app/Api/api';
 import { responsable } from '../model/responsable';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,13 +11,16 @@ import { responsable } from '../model/responsable';
 export class ResponsableService {
 
   constructor(private http: HttpClient) { }
-  customersUrl=api.url+'responsable/all';
-  
+ Urlgetall=api.url+'responsable/all';
+ Urladdresp=api.url+'responsable/all';
   public  getallResponsableData() {
-    console.log("/**/**//*/*/*/*testestest*/*/*/*/");
-    return  this.http.get<responsable[]>(this.customersUrl);
+    console.log("/**/**//*/*/*/*getallResponsableData*/*/*/*/");
+    return  this.http.get<responsable[]>(this.Urlgetall);
     }
-
+    public  addResponsableData(hero: responsable): Observable<responsable> {
+      return this.http.post<responsable>(this.Urladdresp, hero);
+        
+    }
     setHttpHeaders(token: string) {
       const httpOptions = {
         headers: new HttpHeaders({
@@ -25,4 +30,5 @@ export class ResponsableService {
       };
       return httpOptions;
     }
+    
 }
