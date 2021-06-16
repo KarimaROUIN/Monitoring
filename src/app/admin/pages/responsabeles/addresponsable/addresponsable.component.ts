@@ -25,9 +25,9 @@ export class AddresponsableComponent implements OnInit {
           password: ['', [Validators.required, Validators.minLength(6)]],         
           confirmpassword: ['', Validators.required]
           //acceptTerms: [false, Validators.requiredTrue]
-      }/*, {
-          validator: MustMatch('password', 'confirmPassword')
-      }*/);
+      }, {
+          validator: MustMatch('password', 'confirmpassword')
+      });
   }
 
   // convenience getter for easy access to form fields
