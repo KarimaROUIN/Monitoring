@@ -22,25 +22,26 @@
     </div>
     <div class="input-container">
       <label for="adresse" required>Adresse</label>
-      <input type="text" formControlName="adresse" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+      <input type="text" formControlName="adresse" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.adresse.errors }" />
                     <div *ngIf="submitted && f.adresse.errors" class="invalid-feedback">
-                        <div *ngIf="f.name.errors.required">Adresse is required</div>
+                        <div *ngIf="f.adresse.errors.required">Adresse is required</div>
                         </div>
     </div>
     <div class="input-container">
    <label for="responsable">Responsable</label>
+
    <div class="select">
    
-  <select name="responsable" id="responsable">
-    <option selected disabled>Choose an option</option>
+  <select formControlName="responsable" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.responsable.errors }">
+    <option value=""></option>
     <option value="1">Pure CSS</option>
     <option value="2">No JS</option>
     <option value="3">Nice!</option>
   </select>
-   <div *ngIf="submitted && f.responsable.errors" class="invalid-feedback">
-                        <div *ngIf="f.responsable.errors.required">Responsable is required</div>
-                    </div>
 </div>
+  <div *ngIf="submitted && f.responsable.errors" class="invalid-feedback">
+                        <div *ngIf="f.responsable.errors.required">responsable is required</div>
+                    </div>
  </div>
   </section>
   
