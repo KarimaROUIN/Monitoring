@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { responsable } from '../model/responsable';
+import { Responsable } from '../model/Responsable';
 import { ResponsableService } from '../service/responsable.service';
 
 @Component({
@@ -9,13 +9,13 @@ import { ResponsableService } from '../service/responsable.service';
 })
 export class ShowallComponent implements OnInit {
   
-  dataSource !:responsable[]; 
+  dataSource !:Responsable[]; 
 
   ngOnInit() {
   }
 
   constructor(private responsableservice: ResponsableService){    console.log("/**/**//*/*/*/*/*/*/con*/*/*/*/");
-  this.responsableservice.getallResponsableData().subscribe( (responsables: responsable[]) => {     
+  this.responsableservice.getallResponsableData().subscribe( (responsables: Responsable[]) => {     
      for (let i = 0; i < responsables.length; i++) {
    console.log(responsables[i].id+" "+responsables[i].firstName+" "+responsables[i].lastName);
     }

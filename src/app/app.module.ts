@@ -17,7 +17,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import {MatBadgeModule} from '@angular/material/badge'; 
-
+import {MatInputModule} from '@angular/material/input'; 
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     NgbModule,
     HttpClientModule,
-    MatBadgeModule
+    MatBadgeModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

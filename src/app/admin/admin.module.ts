@@ -30,8 +30,10 @@ import { AddkioskComponent } from './pages/kiosks/addkiosk/addkiosk.component';
 import { ShowallkiosksComponent } from './pages/kiosks/showallkiosks/showallkiosks.component';
 import { ShowalldevicesComponent } from './pages/devices/showalldevices/showalldevices.component';
 import { CashboxComponent } from './pages/cashbox/cashbox.component';
+import {MatInputModule} from '@angular/material/input'; 
 import { TransactionsComponent } from './pages/transactions/transactions.component';
 import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showallnotificatiosn.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -68,7 +70,9 @@ import { ShowallnotificatiosnComponent } from './nav/showallnotificatiosn/showal
     MatButtonModule,
     NgbModule,
     HttpClientModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatInputModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }
